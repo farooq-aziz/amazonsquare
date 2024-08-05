@@ -1,0 +1,59 @@
+.purchasersCol {
+  width: 29%;
+  margin-top: 20px;
+}
+
+.purchasersCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.prchsrCard {
+  position: relative;
+}
+
+.prchsrCard::before {
+  content: "";
+  position: absolute;
+  right: -50px;
+  width: 2px;
+  background-color: #fff;
+  height: 320px;
+}
+
+.bttns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btnL:hover {
+  background-color: #fff;
+  color: #24303e;
+}
+
+.btnW:hover {
+  background-color: #fd9802;
+  color: #fff;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .purchasersCol {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .prchsrCard::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bttns {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

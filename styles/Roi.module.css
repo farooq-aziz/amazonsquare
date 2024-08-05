@@ -1,0 +1,11 @@
+.roi .roiRow {
+  row-gap: 50px;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .roi .roiRow {
+    row-gap: 30px;
+  }
+}

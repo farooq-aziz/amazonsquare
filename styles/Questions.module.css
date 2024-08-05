@@ -1,0 +1,22 @@
+.consultImg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.consultImg img {
+  width: 50%;
+}
+
+.consultImg a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}

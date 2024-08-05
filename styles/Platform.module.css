@@ -1,0 +1,31 @@
+.platform {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../public/images/folds/platform-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.caseStdy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.caseStdy a:hover {
+  color: #fd9802;
+}
+
+@media screen and (max-width: 991px) {
+  .platform {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .reBok{
+    width: 200px;
+  }
+}

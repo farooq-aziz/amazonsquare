@@ -1,0 +1,24 @@
+.wasting {
+  position: relative;
+  overflow: hidden;
+}
+
+.wastingImg img {
+  position: absolute;
+  right: -5%;
+  top: 15%;
+  width: 50%;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .wastingRow {
+    row-gap: 50px;
+  }
+
+  .wastingImg img {
+    position: unset;
+    width: 100%;
+  }
+}

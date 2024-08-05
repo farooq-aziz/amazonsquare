@@ -1,0 +1,44 @@
+.buyability .buyabilityRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.buyabilityCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.buyabilityCard::before {
+  content: url(../public/images/icons/poten-line.png);
+  position: absolute;
+  left: 60px;
+}
+
+.card1::before {
+  left: 35px;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 1025px) {
+  .buyability .buyabilityRow {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .buyabilityCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .buyabilityCard::before {
+    display: none;
+  }
+}

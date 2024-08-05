@@ -1,0 +1,12 @@
+.testimonial{
+    display: flex;
+    align-items: center;
+}
+
+.testimonialHead{
+    text-align: center;
+}
+
+.testiSlide{
+    text-align: center;
+}

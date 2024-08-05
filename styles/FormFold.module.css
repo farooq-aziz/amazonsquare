@@ -1,0 +1,74 @@
+.formFold {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.formFoldRow {
+  align-items: center;
+}
+
+.formFoldForm form {
+  width: 80%;
+  padding: 50px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #fd9802;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.formFoldForm form input {
+  border: 0;
+  border-bottom: 1px solid #c4c4c4;
+  border-radius: 0;
+  color: #24303e;
+  background-color: transparent;
+  padding: 10px 15px;
+  margin-bottom: 40px;
+  resize: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins" sans-serif;
+}
+
+.formFoldForm form input:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.formFoldForm form ::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #24303e;
+  font-family: "Poppins" sans-serif;
+  opacity: 0.6;
+}
+
+.formFoldForm form button {
+  width: max-content;
+  padding: 0 15px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .formFold {
+    height: auto;
+  }
+
+  .formFoldRow {
+    row-gap: 30px;
+  }
+
+  .formFoldForm {
+    padding-left: 0px;
+  }
+
+  .formFoldForm form {
+    width: 100%;
+  }
+}

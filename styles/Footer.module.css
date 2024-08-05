@@ -1,0 +1,46 @@
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.socialLinks svg {
+  color: #fd9802;
+  font-size: 20px;
+}
+
+.socialLinks svg:hover {
+  color: #fff;
+}
+
+.footerLinks{
+  position: relative;
+}
+
+.footerLinks::before{
+  content: url(../public/images/icons/footer-before.png);
+  position: absolute;
+  left: -40px;
+}
+
+.footerLinks ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLinks ul li a:hover {
+  color: #fd9802;
+}
+
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .footerRow{
+    row-gap: 30px;
+  }
+}

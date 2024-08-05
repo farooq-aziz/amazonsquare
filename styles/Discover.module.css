@@ -1,0 +1,35 @@
+.discover {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wonder {
+  padding: 0 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wonder::before {
+  content: url(../public/images/testimonial/wonder-line.png);
+  position: absolute;
+  left: 0;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .discover {
+    height: auto;
+  }
+
+  .wonder {
+    padding: 0;
+  }
+
+  .wonder::before {
+    display: none;
+  }
+}

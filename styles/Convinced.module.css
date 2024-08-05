@@ -1,0 +1,39 @@
+.convinced {
+  background: url(../public/images/folds/fold-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnW:hover {
+  background-color: #fd9802;
+  color: #fff;
+}
+
+.btnS img {
+  filter: invert(1);
+}
+
+.btnP:hover {
+  background-color: #fff;
+  color: #24303e;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .convincedImg {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .convinced {
+    height: auto;
+  }
+}

@@ -1,0 +1,67 @@
+.proposal {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.proposalTxt img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+.proposalForm {
+  padding-left: 50px;
+}
+
+.proposalForm form input,
+.proposalForm form textarea {
+  border: 1px solid #fd9802;
+  border-radius: 0;
+  color: #24303e;
+  background-color: transparent;
+  padding: 10px 15px;
+  margin-bottom: 35px;
+  resize: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat" sans-serif;
+}
+
+.proposalForm form input:focus,
+.proposalForm form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #fd9802;
+  background-color: transparent;
+}
+
+.proposalForm form ::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #24303e;
+  font-family: "Montserrat" sans-serif;
+  opacity: 0.6;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .proposal {
+    height: auto;
+  }
+
+  .propslRow{
+    row-gap: 30px;
+  }
+
+  .proposalForm {
+    padding-left: 0px;
+  }
+
+  .proposalTxt img {
+    display: none;
+  }
+}

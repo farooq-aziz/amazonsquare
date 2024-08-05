@@ -1,0 +1,71 @@
+.photography {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.photography .photographyRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.photographyImg img {
+  width: 330px;
+  height: auto;
+}
+
+.photographyCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.photographyCard::before {
+  content: url(../public/images/icons/poten-line.png);
+  position: absolute;
+  left: 60px;
+}
+
+.bttns .btnY:hover {
+  background-color: #fff;
+  color: #24303e;
+}
+
+.bttns .btnW:hover {
+  background-color: #fd9802;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 1025px) {
+  .photography {
+    height: auto;
+  }
+
+  .photography .photographyRow {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .photographyCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .photographyCard::before {
+    display: none;
+  }
+
+  .photographyImg img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}

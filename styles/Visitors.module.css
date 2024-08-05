@@ -1,0 +1,40 @@
+.visitors {
+  position: relative;
+}
+
+.visitorsImg {
+  position: absolute;
+  left: -450px;
+  bottom: 0;
+  width: 75%;
+}
+
+.bgText {
+  background-color: #f8f8f8;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.bgText span {
+  color: #fd9802;
+  font-size: 30px;
+  position: absolute;
+}
+
+.span1 {
+  left: 15px;
+  top: 0;
+}
+
+.span2 {
+  margin-left: 4px;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (min-width: 1600px) {
+  .visitorsImg {
+    width: 55%;
+    left: -350px;
+  }
+}

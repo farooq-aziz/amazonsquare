@@ -1,0 +1,58 @@
+.availing {
+  background: url(../public/images/folds/texture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-size: 15%;
+}
+
+.avilList {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+
+.avilList ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.avilList ul li {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  position: relative; 
+}
+
+.avilList ul li::before {
+  content: url(../public/images/icons/list-before.png);
+  position: absolute;
+  left: -25px;
+  top: 3px;
+}
+
+.btnW img {
+  filter: invert(1);
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .availing {
+    background: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .avilList {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+}

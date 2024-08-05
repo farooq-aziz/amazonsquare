@@ -1,0 +1,55 @@
+.onlineList {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-top: 30px;
+  padding-left: 25px;
+}
+
+.onlineList ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.onlineList ul li {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.onlineList ul li::before {
+  content: url(../public/images/icons/list-before.png);
+  position: absolute;
+  left: -25px;
+  top: 3px;
+}
+
+.onlineImg {
+  width: 530px;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (min-width: 1400px) {
+  .onlineImg {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .onlineImg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .onlineList {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-top: 20px;
+  }
+}

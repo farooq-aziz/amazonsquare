@@ -1,0 +1,68 @@
+.runnerCol {
+  width: 29%;
+  margin-top: 20px;
+}
+
+.runnerCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.runerCard {
+  position: relative;
+}
+
+.runerCard::before {
+  content: "";
+  position: absolute;
+  right: -50px;
+  width: 2px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.runerCard::after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  width: 2px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.bttns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btnL:hover {
+  background-color: #fff;
+  color: #24303e;
+}
+
+.btnW:hover {
+  background-color: #fd9802;
+  color: #fff;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+  .runnerCol {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .runerCard::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bttns {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

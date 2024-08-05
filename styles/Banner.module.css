@@ -1,0 +1,724 @@
+.bannerRow {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bannerTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeBanner .btnL:hover,
+.enhanceBanner .btnL:hover,
+.serviceBanner .btnL:hover {
+  color: #24303e;
+  background-color: #fff;
+}
+
+.homeBanner .btnW:hover,
+.enhanceBanner .btnW:hover,
+.serviceBanner .btnW:hover {
+  color: #fff;
+  background-color: #fd9802;
+}
+
+.enhanceBanner .btnL img,
+.serviceBanner .btnL img,
+.enhanceBanner .btnW img,
+.serviceBanner .btnW img {
+  filter: invert(0);
+}
+
+.enhanceBanner .btnL:hover img,
+.serviceBanner .btnL:hover img,
+.enhanceBanner .btnW:hover img,
+.serviceBanner .btnW:hover img {
+  filter: invert(1);
+}
+
+/* ===== HomeBanner ===== */
+
+.banner {
+  background-color: #24303e;
+}
+
+.homeBanner {
+  width: 100%;
+  padding-top: 150px;
+  z-index: 3;
+}
+
+.homeBanner.bannImg {
+  padding-top: 0;
+  margin-top: -3%;
+  z-index: 1;
+  position: relative;
+}
+
+.homeBanner.bannImg::before {
+  content: "";
+  position: absolute;
+  top: 62.9%;
+  left: 47.1%;
+  background-color: #fd9802;
+  width: 36px;
+  height: 35px;
+  border-radius: 100%;
+  display: none;
+}
+
+.homeBanner.bannImg::after {
+  content: "";
+  position: absolute;
+  top: 61.3%;
+  right: 46.1%;
+  background-color: #fd9802;
+  width: 35px;
+  height: 36px;
+  border-radius: 100%;
+  display: none;
+}
+
+.homeBanner.bannImg:hover::after,
+.homeBanner.bannImg:hover::before {
+  display: block;
+}
+
+.homeBanner .bannerTxt {
+  text-align: center;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.homeBanner .bannerTxt h1 {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.homeBanner .bannerTxt h1::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 102px;
+  width: 73%;
+  height: 2px;
+  background-color: #fd9802;
+}
+
+.homeBanner .bttns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeBanner .bttns a:hover {
+  color: #24303e;
+  background-color: #fff;
+}
+
+/* ===== serviceBanner ===== */
+
+.serviceBanner {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center;
+  background: url(../public/images/banners/service-bg.png);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.serviceBanner .bannerTxt {
+  margin-top: 20px;
+}
+
+.serviceBanner .bannImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  width: 50%;
+  margin-right: -10px;
+}
+
+/* ===== MarketingBanner ===== */
+
+.marketingBanner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.marketingBanner .flexStrech {
+  display: flex;
+  align-self: stretch;
+}
+
+.marketingBanner .bannImg {
+  align-items: flex-end;
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  width: 50%;
+}
+
+.marketingBanner .bannerTxt {
+  width: 80%;
+}
+
+/* ===== authorBanner ===== */
+
+.authorBanner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100vh;
+  background: url(../public/images/banners/author-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.authorBanner .flexStrech {
+  display: flex;
+  align-self: stretch;
+}
+
+.authorBanner .btnP .chat {
+  filter: invert(0);
+}
+
+.authorBanner .btnS .call {
+  filter: invert(1);
+}
+
+/* ===== publishingBanner ===== */
+
+.publishingBanner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #fd9802;
+}
+
+.publishingBanner .btnB .call,
+.publishingBanner .btnW .chat {
+  filter: invert(1);
+}
+
+.publishingBanner .btnB:hover .call,
+.publishingBanner .btnW:hover .chat {
+  filter: invert(0);
+}
+
+.publishingBanner .btnB:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.publishingBanner .btnW:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ===== enhanceBanner ===== */
+
+.enhanceBanner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #24303e;
+}
+
+.enhanceBanner .flexStrech {
+  display: flex;
+  align-self: stretch;
+}
+
+.enhanceBanner .bannImg {
+  align-items: flex-end;
+  justify-content: center;
+}
+.enhanceBanner .bannImg .bannerImg {
+  text-align: center;
+}
+
+.enhanceBanner .bannImg img {
+  width: 90%;
+}
+
+/* ===== enhanceBanner-i ===== */
+
+.enhanceBannerI {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.enhanceBannerI .btnP img {
+  filter: invert(0);
+}
+
+.enhanceBannerI .btnS img {
+  filter: invert(1);
+}
+
+/* ===== smmBanner ===== */
+
+.smmBanner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.smmBanner .bannImg img {
+  width: 85%;
+}
+
+/* ===== listingBanner ===== */
+
+.listingBanner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.listingBanner .flexStrech {
+  display: flex;
+  align-self: stretch;
+}
+
+.listingBanner .bannImg {
+  align-items: flex-end;
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  width: 50%;
+}
+
+.listingBanner .bannerTxt {
+  width: 80%;
+}
+
+/* ===== listingBannerI ===== */
+
+.listBanner {
+  width: 60%;
+}
+
+.listingBannerI {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.listingBannerI h1 {
+  position: relative;
+}
+
+.listingBannerI h1::before {
+  content: url(../public/images/icons/txt-before.png);
+  position: absolute;
+  right: 180px;
+  bottom: 0;
+}
+
+.listingBannerI .bannImg {
+  width: 40%;
+  margin-top: 60px;
+  text-align: center;
+  margin-left: auto;
+}
+
+/* ===== deepKeyBanner ===== */
+
+.deepKeyBanner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.deepKeyBanner h1 {
+  position: relative;
+}
+
+.deepKeyBanner h1::before {
+  content: url(../public/images/icons/txt-before.png);
+  position: absolute;
+  right: 180px;
+  bottom: 0;
+}
+
+.deepKeyBanner P {
+  width: 90%;
+}
+
+.deepKeyBanner .bannImg {
+  width: 40%;
+  margin-top: 60px;
+  text-align: center;
+  margin-left: auto;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (min-width: 1600px) {
+  .serviceBanner .bannImg {
+    width: 60%;
+  }
+
+  /* ======================== */
+
+  .marketingBanner .bannImg {
+    width: 50%;
+    right: 120px;
+  }
+
+  /* ======================== */
+
+  .authorBanner .bannerTxt {
+    margin-bottom: 150px;
+  }
+
+  .authorBanner {
+    height: auto;
+    padding: 250px 0 0;
+  }
+
+  /* ======================== */
+
+  .enhanceBanner .bannerTxt {
+    margin-bottom: 150px;
+  }
+
+  .enhanceBanner {
+    height: auto;
+    padding: 250px 0 0;
+  }
+
+  .enhanceBanner .bannImg img {
+    width: 100%;
+  }
+
+  /* ======================== */
+
+  .enhanceBannerI .bannerTxt {
+    width: 80%;
+  }
+
+  /* ======================== */
+
+  .smmBanner .bannImg img {
+    width: 100%;
+  }
+
+  /* ======================== */
+
+  .deepKeyBanner .bannImg {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .serviceBanner .bannerTxt {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .homeBanner .bannerTxt h1 {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+
+  .homeBanner .bannerTxt h1::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 85px;
+    width: 77%;
+    height: 2px;
+    background-color: #fd9802;
+  }
+
+  .homeBanner.bannImg::before {
+    width: 31px;
+    height: 31px;
+  }
+
+  .homeBanner.bannImg::after {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .homeBanner .bannerTxt h1 {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+
+  .homeBanner.bannImg::before {
+    top: 63%;
+    left: 47.1%;
+    width: 26px;
+    height: 25px;
+  }
+
+  .homeBanner.bannImg::after {
+    top: 61.5%;
+    right: 46%;
+    width: 26px;
+    height: 25px;
+  }
+
+  /* ======================== */
+
+  .serviceBanner {
+    height: auto;
+  }
+
+  .serviceBanner .bannImg {
+    width: 100%;
+    position: relative;
+  }
+
+  .serviceBanner .bannerTxt {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .homeBanner {
+    padding-top: 50px;
+  }
+
+  .homeBanner.bannImg {
+    padding-top: 0;
+    margin-top: -3%;
+    z-index: 1;
+  }
+
+  .homeBanner .bannerTxt {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .homeBanner .bannerTxt h1 {
+    position: unset;
+    width: 100%;
+    margin: auto;
+  }
+
+  .homeBanner .bannerTxt h1::before {
+    display: none;
+  }
+
+  .homeBanner.bannImg::before {
+    width: 20px;
+    height: 19px;
+  }
+
+  .homeBanner.bannImg::after {
+    width: 20px;
+    height: 19px;
+  }
+
+  /* ======================== */
+
+  .marketingBanner {
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .marketingBanner .bannImg {
+    position: unset;
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .marketingBanner .bannerTxt {
+    width: 100%;
+  }
+
+  /* ======================== */
+
+  .authorBanner {
+    height: auto;
+    background: unset;
+  }
+
+  .authorBanner .bannImg {
+    margin-top: 50px;
+  }
+
+  /* ======================== */
+
+  .publishingBanner {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .publishingBanner .bannImg {
+    margin-top: 50px;
+  }
+
+  /* ======================== */
+
+  .enhanceBanner {
+    height: auto;
+  }
+
+  .enhanceBanner .bannImg img {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  /* ======================== */
+
+  .enhanceBannerI {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .enhanceBannerI .bannImg img {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  /* ======================== */
+
+  .smmBanner {
+    height: auto;
+  }
+
+  .smmBanner .bannImg img {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  /* ======================== */
+
+  .listingBanner {
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+  }
+
+  .listingBanner .bannImg {
+    position: unset;
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .listingBanner .bannerTxt {
+    width: 100%;
+  }
+
+  /* ======================== */
+
+  .listBanner {
+    width: 100%;
+  }
+
+  .listingBannerI {
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+  }
+
+  .listingBannerI .bannImg {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .listingBannerI h1::before {
+    display: none;
+  }
+
+  /* ======================== */
+
+  .deepKeyBanner {
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+  }
+
+  .deepKeyBanner P {
+    width: 100%;
+  }
+
+  .deepKeyBanner .bannImg {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .deepKeyBanner h1::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeBanner.bannImg::before {
+    top: 63%;
+    left: 47.2%;
+    width: 11px;
+    height: 11px;
+  }
+
+  .homeBanner.bannImg::after {
+    top: 61.5%;
+    right: 46.2%;
+    width: 11px;
+    height: 11px;
+  }
+
+  /* ======================== */
+
+  .serviceBanner .bannerTxt {
+    margin-top: 50px;
+  }
+
+  /* ======================== */
+
+  .marketingBanner {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .homeBanner.bannImg::before {
+    top: 62.8%;
+    left: 47.2%;
+    width: 8.2px;
+    height: 8px;
+  }
+
+  .homeBanner.bannImg::after {
+    top: 61.4%;
+    right: 46.3%;
+    width: 8.2px;
+    height: 8px;
+  }
+}

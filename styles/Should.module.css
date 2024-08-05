@@ -1,0 +1,90 @@
+.should {
+  display: flex;
+  align-items: center;
+}
+
+.shouldRow {
+  align-items: flex-end;
+}
+
+.shouldImg {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .traficSholud .shouldImg {
+  position: relative;
+}
+
+.traficSholud .shouldImg img {
+  position: absolute;
+  left: -45px;
+  top: -177px;
+  z-index: -1;
+} */
+
+.brandSholud .shouldImg {
+  position: relative;
+  width: 100%;
+}
+
+.brandSholud .shouldImg img {
+  position: absolute;
+  right: 0px;
+  bottom: -90px;
+  z-index: -1;
+}
+
+.bgText {
+  background-color: #f8f8f8;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.bgText span{
+  color: #fd9802;
+  font-size: 30px;
+  position: absolute;
+}
+
+.span1{
+  left: 15px;
+  top: 0;
+}
+
+.span2{
+  margin-left: 4px;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (min-width: 1600px) {
+  .brandSholud .shouldImg img {
+    position: absolute;
+    left: 40px;
+    top: -200px;
+    z-index: -1;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .shouldRow {
+    row-gap: 40px;
+  }
+
+  .shouldImg {
+    width: 100%;
+  }
+
+  .traficSholud .shouldImg,
+  .brandSholud .shouldImg {
+    position: unset;
+  }
+
+  .traficSholud .shouldImg img,
+  .brandSholud .shouldImg img {
+    position: unset;
+  }
+}

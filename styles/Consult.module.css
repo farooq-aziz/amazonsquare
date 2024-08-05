@@ -1,0 +1,33 @@
+.consult {
+  background: url(../public/images/folds/consult-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btnW:hover {
+  background-color: #24303e;
+  color: #fff;
+}
+
+.btnS:hover {
+  background-color: #fff;
+  color: #24303e;
+}
+
+.btnS img {
+  filter: invert(1);
+}
+
+.btnS:hover img {
+  filter: invert(0);
+}
+
+.consultImg {
+  text-align: center;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 991px) {
+}

@@ -1,0 +1,92 @@
+.translating {
+  position: relative;
+}
+
+.translating .translatingRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.translatingCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.translatingCard::before {
+  content: url(../public/images/icons/poten-line.png);
+  position: absolute;
+  left: 60px;
+}
+
+.card1::before {
+  left: 65px;
+}
+
+.card2::before {
+  left: 55px;
+}
+
+.translatingImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.translatingImg img {
+  width: 90%;
+}
+
+/* ===================== Media Queries ===================== */
+
+@media screen and (max-width: 1025px) {
+  .translating .translatingRow {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .translatingCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .translatingCard::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .translating {
+    padding-bottom: 0;
+  }
+
+  .translatingImg {
+    position: unset;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: unset;
+  }
+
+  .translatingImg img {
+    width: 100%;
+    margin-top: 0px;
+    padding: 50px 0;
+  }
+
+  .transRow {
+    row-gap: 40px;
+  }
+}

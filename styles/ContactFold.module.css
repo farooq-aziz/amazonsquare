@@ -1,0 +1,60 @@
+.contect {
+  background: url(../public/images/folds/fold-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactForm input,
+.contactForm textarea {
+  border: 1px solid #fd9802;
+  border-radius: 8px;
+  color: #fff;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  backdrop-filter: brightness(15px);
+  padding: 15px 15px;
+  resize: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat" sans-serif;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #fd9802;
+  background-color: transparent;
+  color: #fff;
+}
+
+.contactForm ::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Montserrat" sans-serif;
+  opacity: 0.6;
+}
+
+.contactForm .cntBtn {
+  height: 50px;
+  width: max-content;
+  padding: 0 25px;
+}
+
+.contactForm .cntBtn:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .contect {
+    height: auto;
+  }
+}
